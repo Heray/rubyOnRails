@@ -1,0 +1,45 @@
+<%= javascript_include_tag "rails", "jquery", "application" %>
+
+
+<head>
+  <style>
+  p { font-size:150%; cursor:pointer; }
+  </style>
+
+</head>
+<body>
+  <p>
+  If you click on this paragraph
+  you'll see it just fade away.
+  </p>
+
+
+<script>
+  $("p").click(function () {
+  $("p").fadeOut("slow");
+  });
+</script>
+
+<%= form_for :event, @event, :url=>"s" do |f| %>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<script>
+var res = $.ajax({
+   type: "POST",
+   url: "create_event",
+   data: "name=John&location=Boston",
+   async:false,
+
+   success: function(msg){
+     alert( "Data Saved: " + msg);
+   }
+ }).responseText;
+alert(res);
+</script>

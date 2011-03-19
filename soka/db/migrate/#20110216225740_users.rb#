@@ -1,0 +1,12 @@
+class Users < ActiveRecord::Migration
+  def self.up
+    execute <<-SQL
+      ALTER TABLE users
+         ADD CONSTRAINT
+
+
+  end
+
+  def self.down
+  end
+end

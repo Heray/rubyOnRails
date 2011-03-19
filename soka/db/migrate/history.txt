@@ -1,0 +1,1 @@
+rails generate model Events title:string location:string start_time:datetime end_time:datetime description:text
