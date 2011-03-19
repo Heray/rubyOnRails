@@ -1,0 +1,28 @@
+<%= javascript_include_tag "jquery", "rails", "application" %>
+
+<div class="event_detail">
+  <div class="edit"> edit </div>
+</div>
+
+  <script>
+    $(".edit").click(function() {
+        $(".event_detail").hide();
+        $(".edit_event").show();
+      });
+
+    <!-- Does not work right now! -->
+    $(".added_time_slot").click(function() {
+        $(".add_event").hide();
+        $(".event_detail").show();
+    });
+
+  </script>
+
+
+
+<!--
+<%= select_time Time.now, :prefix => :start_time %>
+<br />
+<%= select_time Time.now+3600, :prefix => :end_time %>
+<br />
+-->

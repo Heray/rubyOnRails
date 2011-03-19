@@ -1,0 +1,53 @@
+<%= javascript_include_tag "jquery", "rails", "application" %>
+
+<div class="add_event">
+
+  <form action="javascript:add_event_click();">
+    <div class="input_time">
+      <label>Title </label>
+      <input type="text" name="title"/>
+                           <br />
+      <label>Start Time</label>
+                           <input type="text" name="add_start_time" value = ""/>
+      <br />
+      <label>End Time</label>
+      <input type="text" name="add_end_time" value = ""/>
+      <br />
+      <input type="submit" name="submit"/>
+    </div>
+  </form>
+</div>
+
+<div class="filtered_events"></div>
+
+
+
+
+  <script>
+    function add_event_click() {
+      var fields = $("form").serializeArray();
+
+      var res = $.ajax( {
+        type: "POST",
+        url: "add_event",
+        async: false,
+        data:fields,
+      }).responseText;
+
+      if (res=="OK") {
+        alert(res);
+
+        $(".add_event").hide();
+      }
+    };
+
+  </script>
+
+
+
+<!--
+<%= select_time Time.now, :prefix => :start_time %>
+<br />
+<%= select_time Time.now+3600, :prefix => :end_time %>
+<br />
+-->

@@ -1,0 +1,85 @@
+<%= javascript_include_tag "jquery", "rails", "application" %>
+
+<% for i in 0..((@slot_names.length-1)/2) %>
+  <div class="hour_slot_class" hour_slot="<%= i %>"> 
+    <% j = i*2 %>
+    <% ['first_half_hour','second_half_hour'].each do |half_slot| %>
+    
+
+
+      <h4><%= @slot_names[j] %>:</h4>
+      <% @slots[j].each do |slot| %>
+        <div class="<%= half_slot %>">
+          <div class="added_time_slot">
+            <div class="time">
+              <%= if slot.start_time 
+		  slot.start_time.hour + slot.start_time.min 
+		  end%> - 
+	      <%= if slot.end_time
+		  slot.end_time.hour+slot.end_time.min 
+		  end%>
+	    </div>
+	  </div>
+        </div>
+	<div class="title">
+          <%= slot.title %>
+	</div>
+      <% end %>
+      <% j += 1 %>
+    <% end %>
+  
+  </div>
+<% end %>
+
+
+<h3>my events</h3>
+
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Start Time</th>
+    <th>End Time</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @events.each do |event| %>
+  <tr>
+    <td><%= event.title %></td>
+    <td><%= event.start_time %></td>
+    <td><%= event.end_time %></td>
+  </tr>
+<% end %>
+</table>
+
+<script>
+var edit = false;
+$(".added_time_slot").click(function() {
+   edit = true;
+   alert("ediiiit!");
+});
+
+
+$(".hour_slot_class").click(function() {
+   if (edit) { 
+     edit = false;
+     return; 
+   }
+   var st = $(this).attr("hour_slot");
+   $('input[name*="add_start_time"]').val(st);
+   $('input[name*="add_end_time"]').val(st+1);
+   $(".add_event").show();
+
+   var fields = st
+   $.ajax( {
+     type: "POST",
+     url: "filter_events",
+     async: true,
+     data:fields,
+   });
+
+});
+</script>
+   

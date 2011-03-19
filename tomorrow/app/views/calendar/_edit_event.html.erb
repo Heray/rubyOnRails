@@ -1,0 +1,24 @@
+<%= javascript_include_tag "jquery", "rails", "application" %>
+
+<!-- event detail, edit link provided -->
+
+<div class="event_detail">
+  <div class="edit"> edit </div>
+</div>
+
+<!-- edit event -->
+<!-- filter event -->
+
+<script>
+  $(".edit").click(function() {
+    $(".event_detail").hide();
+    $(".edit_event").show();
+  });
+
+  <!-- Does not work right now! -->
+  $(".added_time_slot").click(function() {
+    $(".add_event").hide();
+    $(".event_detail").show();
+  });
+
+</script>

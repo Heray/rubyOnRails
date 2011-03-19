@@ -1,0 +1,10 @@
+# SQLite version 3.x
+#   gem install sqlite3
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: calendar_development
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql.sock

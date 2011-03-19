@@ -1,0 +1,120 @@
+hr {color:sienna;}
+p {margin-left:20px;}
+body {background-color:#b0c4de;}
+
+.window {
+  margin:auto;
+  width:1000px;
+}
+
+.top_bar {
+   position: fixed;
+   background-color:#6699FF;
+   top:0px;
+   left:0px;
+   height:40px;
+   width:100%;
+   z-index:10;
+}
+
+.display_box {
+   width:950px;
+   
+   top:50px;
+   border-style:solid;
+   border-width:10px;
+   z-index:9;
+   clear:both;
+}	     
+
+.left_half {
+   position:relative;
+   width: 465px;
+   left: 5px;
+   top: 5px;
+
+   border-style:solid;
+   border-width:3px;
+
+   float:left;
+
+}
+
+.right_half {
+   position:relative;
+   top:5px;
+   left:5px;
+   width:465px;
+
+   border-style:solid;
+   border-width:3px;
+   float:left;
+
+}
+
+.sub_right_half {
+   position:relative;
+   margin:25px 10px 25px 10px;
+
+}
+
+.popup_right_half {
+   position:relative;
+
+}
+
+.absolute_right {
+   position: fixed;
+   border-style: solid;
+   border-width: 5px;
+   top: 40px;
+   min-width: 400px;
+}
+
+.add_event {
+   display:none;
+   position:relative;
+   border-style:solid;
+   border-width:3px;
+}
+
+.filtered_events {
+   display:none;
+   position:relative;
+
+   border-style:solid;
+   border-width:3px;
+}
+
+
+/* event_detail */
+.event_detail {
+   display: none;
+   position: relative;
+}
+
+
+/* _list_events */
+
+.hour_slot_class {
+   
+   border-style:solid;
+   border-width:1px;
+}
+
+.added_time_slot .time {
+   background-color:#3366cc;
+   color:white;
+}
+
+
+/* _edit_events */
+.edit_event {
+   display: none;
+   
+}
+
+/* my_info */
+.my_info {
+
+}

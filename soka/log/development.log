@@ -1,0 +1,2250 @@
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at Fri Feb 11 00:53:56 -0500 2011
+  Processing by Rails::InfoController#properties as 
+  [1m[36mSQL (30.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Rendered inline template (0.3ms)
+Completed 200 OK in 48ms (Views: 1.4ms | ActiveRecord: 30.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Feb 11 00:57:22 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Feb 11 00:57:41 -0500 2011
+
+ActionController::RoutingError (uninitialized constant HomController):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Feb 11 00:57:48 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Feb 15 00:17:50 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Feb 15 00:18:55 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (147.4ms)
+Completed   in 154ms
+
+ActionView::Template::Error (undefined local variable or method `posts_path' for #<#<Class:0x103ff64d8>:0x103ff4908>):
+    1: <h1>Home#index</h1>
+    2: <p>Find me in app/views/home/index.html.erb</p>
+    3: <h1>Hello, Rails!</h1> <%= link_to "My Blog", posts_path %>
+  app/views/home/index.html.erb:3:in `_app_views_home_index_html_erb___2045408817_2181011420_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Feb 15 00:18:59 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (6.1ms)
+Completed   in 13ms
+
+ActionView::Template::Error (undefined local variable or method `posts_path' for #<#<Class:0x103ea3dd8>:0x103ea2208>):
+    1: <h1>Home#index</h1>
+    2: <p>Find me in app/views/home/index.html.erb</p>
+    3: <h1>Hello, Rails!</h1> <%= link_to "My Blog", posts_path %>
+  app/views/home/index.html.erb:3:in `_app_views_home_index_html_erb___2045408817_2180318300_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Feb 15 00:19:00 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed   in 12ms
+
+ActionView::Template::Error (undefined local variable or method `posts_path' for #<#<Class:0x103d753f8>:0x103d73828>):
+    1: <h1>Home#index</h1>
+    2: <p>Find me in app/views/home/index.html.erb</p>
+    3: <h1>Hello, Rails!</h1> <%= link_to "My Blog", posts_path %>
+  app/views/home/index.html.erb:3:in `_app_views_home_index_html_erb___2045408817_2179698540_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (56.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (62.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Feb 15 00:20:23 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Feb 16 12:41:09 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 30ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at Wed Feb 16 12:41:38 -0500 2011
+
+ActionController::RoutingError (No route matches "/events"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/events" for 127.0.0.1 at Wed Feb 16 12:43:15 -0500 2011
+
+ActionController::RoutingError (No route matches "/events"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/events" for 127.0.0.1 at Wed Feb 16 12:43:16 -0500 2011
+
+ActionController::RoutingError (No route matches "/events"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/events" for 127.0.0.1 at Wed Feb 16 12:43:17 -0500 2011
+
+ActionController::RoutingError (No route matches "/events"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Feb 16 12:43:21 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (22.3ms)
+Completed   in 29ms
+
+ActionView::Template::Error (undefined local variable or method `events_path' for #<#<Class:0x103f15d48>:0x103f14178>):
+    1: <h1>Home#index</h1>
+    2: <p>Find me in app/views/home/index.html.erb</p>
+    3: <h1>Hello, Rails!</h1> <%= link_to "My Blog", events_path %>
+  app/views/home/index.html.erb:3:in `_app_views_home_index_html_erb___2045408817_2180551700_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Feb 16 12:44:23 -0500 2011
+
+NoMethodError (undefined method `source' for #<ActionDispatch::Routing::Mapper:0x103e1a740>):
+  config/routes.rb:3
+  config/routes.rb:1
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Feb 16 12:44:52 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at Wed Feb 16 12:45:30 -0500 2011
+
+SyntaxError (/Users/heranyang/Workspace/rubyOnRails/soka/app/controllers/events_controller.rb:5: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started GET "/events" for 127.0.0.1 at Wed Feb 16 12:46:22 -0500 2011
+  Processing by EventsController#index as HTML
+  [1m[36mEvents Load (18.9ms)[0m  [1mSELECT "events".* FROM "events"[0m
+SQLite3::SQLException: no such table: events: SELECT "events".* FROM "events"
+Completed   in 67ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: events: SELECT "events".* FROM "events"):
+  app/controllers/events_controller.rb:4:in `index'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (44.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (211.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateEvents (20110216173229)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "location" varchar(255), "start_time" datetime, "end_time" datetime, "description" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110216173229')
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("events")
+
+
+Started GET "/events" for 127.0.0.1 at Wed Feb 16 12:50:02 -0500 2011
+  Processing by EventsController#index as HTML
+  [1m[35mEvents Load (0.5ms)[0m  SELECT "events".* FROM "events"
+Rendered events/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 13ms (Views: 8.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:03:04 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/new.html.erb within layouts/application (1.8ms)
+Completed   in 8ms
+
+ActionView::Template::Error (Missing partial events/form with {:handlers=>[:erb, :builder, :rjs, :rhtml, :rxml], :locale=>[:en, :en], :formats=>[:html]} in view paths "/Users/heranyang/Workspace/rubyOnRails/soka/app/views"):
+    1: <h1>New event</h1>
+    2: 
+    3: <%= render 'form' %>
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180827080_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.1ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:05:27 -0500 2011
+  Processing by EventsController#new as HTML
+ERROR: compiling _app_views_events__form_html_erb__1736877526_2180064400_871230 RAISED compile error
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:6: syntax error, unexpected kENSURE, expecting kEND
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:8: syntax error, unexpected $end, expecting kEND
+Function body:           def _app_views_events__form_html_erb__1736877526_2180064400_871230(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "events/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.append=  form_for(@events) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+    ');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat('<br />
+  </div>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:8:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:134:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:54:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:127:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:333:in `render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:262:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:260:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:378:in `_render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:31:in `render'
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180073600_0'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:135:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:135:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:54:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:127:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:59:in `_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:56:in `_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:26:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:93:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rendering.rb:17:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/base.rb:150:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:435:in `_run__1242818292__process_action__662920150__callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:409:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:93:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/base.rb:119:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:41:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal.rb:138:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal.rb:178:in `action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/head.rb:14:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:32:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:12:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/rack/logger.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/static.rb:30:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/application.rb:168:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/application.rb:77:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/application.rb:77:in `method_missing'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/rack/log_tailer.rb:14:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands/server.rb:65:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands.rb:30
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands.rb:27:in `tap'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered events/_form.html.erb (0.7ms)
+Rendered events/new.html.erb within layouts/application (2.7ms)
+Completed   in 9ms
+
+ActionView::Template::Error (compile error
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:6: syntax error, unexpected kENSURE, expecting kEND
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:8: syntax error, unexpected $end, expecting kEND):
+    3:     <%= f.label :name %><br />
+    4:   </div>
+  app/views/events/_form.html.erb:8:in `compile'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180073600_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.9ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:05:51 -0500 2011
+  Processing by EventsController#new as HTML
+ERROR: compiling _app_views_events__form_html_erb__1736877526_2179359640_871230 RAISED compile error
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:5: syntax error, unexpected kEND
+');@output_buffer.append= ( end );@output_buffer.safe_concat('
+                               ^
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:7: syntax error, unexpected kENSURE, expecting ')'
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:9: syntax error, unexpected kEND, expecting ')'
+Function body:           def _app_views_events__form_html_erb__1736877526_2179359640_871230(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "events/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.append=  form_for(@events) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+    ');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat('<br />
+  </div>
+');@output_buffer.append= ( end );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:9:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:134:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:54:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:127:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:333:in `render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:262:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:260:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:378:in `_render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:31:in `render'
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2179368680_0'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:135:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:135:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:54:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:127:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:59:in `_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:56:in `_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:26:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:93:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rendering.rb:17:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/base.rb:150:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:435:in `_run__1242818292__process_action__662920150__callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:409:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:93:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/base.rb:119:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:41:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal.rb:138:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal.rb:178:in `action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/head.rb:14:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:32:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:12:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/rack/logger.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/static.rb:30:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/application.rb:168:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/application.rb:77:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/application.rb:77:in `method_missing'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/rack/log_tailer.rb:14:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands/server.rb:65:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands.rb:30
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands.rb:27:in `tap'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered events/_form.html.erb (145.1ms)
+Rendered events/new.html.erb within layouts/application (147.1ms)
+Completed   in 153ms
+
+ActionView::Template::Error (compile error
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:5: syntax error, unexpected kEND
+');@output_buffer.append= ( end );@output_buffer.safe_concat('
+                               ^
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:7: syntax error, unexpected kENSURE, expecting ')'
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:9: syntax error, unexpected kEND, expecting ')'):
+    2:   <div class="field">
+    3:     <%= f.label :name %><br />
+    4:   </div>
+    5: <%= end %>
+  app/views/events/_form.html.erb:9:in `compile'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2179368680_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (67.7ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:06:24 -0500 2011
+  Processing by EventsController#new as HTML
+ERROR: compiling _app_views_events__form_html_erb__1736877526_2180818920_871230 RAISED compile error
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:8: syntax error, unexpected kEND
+');@output_buffer.append= ( end );@output_buffer.safe_concat('
+                               ^
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:10: syntax error, unexpected kENSURE, expecting ')'
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:12: syntax error, unexpected kEND, expecting ')'
+Function body:           def _app_views_events__form_html_erb__1736877526_2180818920_871230(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "events/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.append=  form_for(@events) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+    ');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat('<br />
+  </div>
+  <div class="actions">
+    ');@output_buffer.append= ( f.submit );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+');@output_buffer.append= ( end );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:12:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:134:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:54:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:127:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:333:in `render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:262:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:260:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:378:in `_render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:31:in `render'
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180829540_0'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:135:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:135:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:54:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:127:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:59:in `_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:56:in `_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:26:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:93:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rendering.rb:17:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/base.rb:150:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:435:in `_run__1242818292__process_action__662920150__callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:409:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:93:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/base.rb:119:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:41:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal.rb:138:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal.rb:178:in `action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/head.rb:14:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:32:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:12:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/rack/logger.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/static.rb:30:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/application.rb:168:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/application.rb:77:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/application.rb:77:in `method_missing'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/rack/log_tailer.rb:14:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands/server.rb:65:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands.rb:30
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands.rb:27:in `tap'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered events/_form.html.erb (0.8ms)
+Rendered events/new.html.erb within layouts/application (3.0ms)
+Completed   in 9ms
+
+ActionView::Template::Error (compile error
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:8: syntax error, unexpected kEND
+');@output_buffer.append= ( end );@output_buffer.safe_concat('
+                               ^
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:10: syntax error, unexpected kENSURE, expecting ')'
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:12: syntax error, unexpected kEND, expecting ')'):
+    5:   <div class="actions">
+    6:     <%= f.submit %>
+    7:   </div>
+    8: <%= end %>
+  app/views/events/_form.html.erb:12:in `compile'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180829540_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:07:49 -0500 2011
+  Processing by EventsController#new as HTML
+ERROR: compiling _app_views_events__form_html_erb__1736877526_2180039800_871230 RAISED compile error
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:8: syntax error, unexpected kEND
+');@output_buffer.append= ( end );@output_buffer.safe_concat('
+                               ^
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:10: syntax error, unexpected kENSURE, expecting ')'
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:12: syntax error, unexpected kEND, expecting ')'
+Function body:           def _app_views_events__form_html_erb__1736877526_2180039800_871230(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "events/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.append=  form_for(@events) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+    ');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat('<br />
+  </div>
+  <div class="actions">
+    ');@output_buffer.append= ( f.submit );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+');@output_buffer.append= ( end );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:12:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:134:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:54:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:127:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:333:in `render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:262:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:260:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:378:in `_render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:31:in `render'
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180048720_0'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:135:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:135:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:54:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:127:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:59:in `_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:56:in `_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:26:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:93:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rendering.rb:17:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/base.rb:150:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:435:in `_run__1242818292__process_action__662920150__callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:409:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:93:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/base.rb:119:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:41:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal.rb:138:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal.rb:178:in `action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/head.rb:14:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:32:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:12:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/rack/logger.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/static.rb:30:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/application.rb:168:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/application.rb:77:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/application.rb:77:in `method_missing'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/rack/log_tailer.rb:14:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands/server.rb:65:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands.rb:30
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands.rb:27:in `tap'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered events/_form.html.erb (0.9ms)
+Rendered events/new.html.erb within layouts/application (3.2ms)
+Completed   in 10ms
+
+ActionView::Template::Error (compile error
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:8: syntax error, unexpected kEND
+');@output_buffer.append= ( end );@output_buffer.safe_concat('
+                               ^
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:10: syntax error, unexpected kENSURE, expecting ')'
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:12: syntax error, unexpected kEND, expecting ')'):
+    5:   <div class="actions">
+    6:     <%= f.submit %>
+    7:   </div>
+    8: <%= end %>
+  app/views/events/_form.html.erb:12:in `compile'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180048720_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:07:56 -0500 2011
+  Processing by EventsController#new as HTML
+ERROR: compiling _app_views_events__form_html_erb__1736877526_2179325000_871230 RAISED compile error
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:9: syntax error, unexpected kEND
+');@output_buffer.append= ( end );@output_buffer.safe_concat('
+                               ^
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:11: syntax error, unexpected kENSURE, expecting ')'
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:13: syntax error, unexpected kEND, expecting ')'
+Function body:           def _app_views_events__form_html_erb__1736877526_2179325000_871230(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "events/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.append=  form_for(@events) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+    ');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.text_field :name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="actions">
+    ');@output_buffer.append= ( f.submit );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+');@output_buffer.append= ( end );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:13:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:134:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:54:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:127:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:333:in `render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:262:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:260:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/partials.rb:378:in `_render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:31:in `render'
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2179333900_0'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:135:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:135:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:54:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/template.rb:127:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:59:in `_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:56:in `_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_view/render/rendering.rb:26:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:93:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rendering.rb:17:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/base.rb:150:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:435:in `_run__1242818292__process_action__662920150__callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:409:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:93:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/notifications.rb:52:in `instrument'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/base.rb:119:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/abstract_controller/rendering.rb:41:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal.rb:138:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_controller/metal.rb:178:in `action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/head.rb:14:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:32:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:12:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/query_cache.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/rack/logger.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/static.rb:30:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/application.rb:168:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/application.rb:77:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/application.rb:77:in `method_missing'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/rack/log_tailer.rb:14:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands/server.rb:65:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands.rb:30
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands.rb:27:in `tap'
+/opt/local/lib/ruby/gems/1.8/gems/railties-3.0.4/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered events/_form.html.erb (0.9ms)
+Rendered events/new.html.erb within layouts/application (2.7ms)
+Completed   in 9ms
+
+ActionView::Template::Error (compile error
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:9: syntax error, unexpected kEND
+');@output_buffer.append= ( end );@output_buffer.safe_concat('
+                               ^
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:11: syntax error, unexpected kENSURE, expecting ')'
+/Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:13: syntax error, unexpected kEND, expecting ')'):
+    6:   <div class="actions">
+    7:     <%= f.submit %>
+    8:   </div>
+    9: <%= end %>
+  app/views/events/_form.html.erb:13:in `compile'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2179333900_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:08:34 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (0.6ms)
+Rendered events/new.html.erb within layouts/application (2.5ms)
+Completed   in 8ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@events) do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :name %><br />
+    4:     <%= f.text_field :name %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2180833820_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180842880_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.1ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:09:55 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (14.2ms)
+Rendered events/new.html.erb within layouts/application (16.4ms)
+Completed   in 31ms
+
+ActionView::Template::Error (undefined method `events_index_path' for #<#<Class:0x103e0d4f0>:0x103e0b970>):
+    1: <%= form_for(@event) do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :name %><br />
+    4:     <%= f.text_field :name %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2180000880_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180009740_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/events/" for 127.0.0.1 at Wed Feb 16 13:15:02 -0500 2011
+  Processing by EventsController#index as HTML
+  [1m[36mEvents Load (0.6ms)[0m  [1mSELECT "events".* FROM "events"[0m
+Rendered events/index.html.erb within layouts/application (44.5ms)
+Completed 200 OK in 59ms (Views: 53.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:15:05 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (14.0ms)
+Rendered events/new.html.erb within layouts/application (16.9ms)
+Completed   in 28ms
+
+ActionView::Template::Error (undefined method `events_index_path' for #<#<Class:0x103faa858>:0x103fa8c60>):
+    1: <%= form_for(@event) do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :name %><br />
+    4:     <%= f.text_field :name %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2180846740_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180855840_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.6ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.6ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:15:15 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (11.2ms)
+Rendered events/new.html.erb within layouts/application (14.3ms)
+Completed   in 25ms
+
+ActionView::Template::Error (undefined method `events_index_path' for #<#<Class:0x103dd86d8>:0x103dd6b08>):
+    1: <% form_for(@event) do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :name %><br />
+    4:     <%= f.text_field :name %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2179892520_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2179901400_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.9ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:15:26 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (11.2ms)
+Rendered events/new.html.erb within layouts/application (13.2ms)
+Completed   in 79ms
+
+ActionView::Template::Error (undefined method `events_index_path' for #<#<Class:0x103ff12d0>:0x103fef728>):
+    1: <%= form_for(@event) do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :name %><br />
+    4:     <%= f.text_field :name %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2180991760_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2181000660_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.6ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:15:52 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (0.7ms)
+Rendered events/new.html.erb within layouts/application (2.7ms)
+Completed   in 13ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@eve) do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :name %><br />
+    4:     <%= f.text_field :name %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2180032680_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180041560_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.6ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:15:58 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (11.2ms)
+Rendered events/new.html.erb within layouts/application (13.7ms)
+Completed   in 25ms
+
+ActionView::Template::Error (undefined method `events_index_path' for #<#<Class:0x103ca7778>:0x103ca5bf8>):
+    1: <%= form_for(@event) do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :name %><br />
+    4:     <%= f.text_field :name %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2179267980_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2179276880_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.8ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:16:03 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (7.7ms)
+Rendered events/new.html.erb within layouts/application (9.7ms)
+Completed   in 20ms
+
+ActionView::Template::Error (undefined method `form_fo' for #<#<Class:0x103f23560>:0x103f219e0>):
+    1: <%= form_fo(@event) do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :name %><br />
+    4:     <%= f.text_field :name %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2180570240_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180579140_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.6ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:16:07 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (10.6ms)
+Rendered events/new.html.erb within layouts/application (12.7ms)
+Completed   in 23ms
+
+ActionView::Template::Error (undefined method `events_index_path' for #<#<Class:0x103d730a8>:0x103d711b8>):
+    1: <%= form_for(@event) do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :name %><br />
+    4:     <%= f.text_field :name %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2179673140_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2179692740_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (61.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (68.5ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:17:30 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (10.9ms)
+Rendered events/new.html.erb within layouts/application (13.1ms)
+Completed   in 24ms
+
+ActionView::Template::Error (undefined method `events_index_path' for #<#<Class:0x103f78ce0>:0x103f77138>):
+    1: <%= form_for(@event) do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :title %><br />
+    4:     <%= f.text_field :title %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2180745260_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180754160_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.6ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:17:31 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (17.9ms)
+Rendered events/new.html.erb within layouts/application (19.8ms)
+Completed   in 31ms
+
+ActionView::Template::Error (undefined method `events_index_path' for #<#<Class:0x103da47e8>:0x103da2858>):
+    1: <%= form_for(@event) do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :title %><br />
+    4:     <%= f.text_field :title %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2179785360_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2179794560_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.9ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:17:32 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (10.8ms)
+Rendered events/new.html.erb within layouts/application (12.5ms)
+Completed   in 23ms
+
+ActionView::Template::Error (undefined method `events_index_path' for #<#<Class:0x103fa6e88>:0x103fa5308>):
+    1: <%= form_for(@event) do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :title %><br />
+    4:     <%= f.text_field :title %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2180839660_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180848600_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.6ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.7ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:17:33 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (10.2ms)
+Rendered events/new.html.erb within layouts/application (12.0ms)
+Completed   in 38ms
+
+ActionView::Template::Error (undefined method `events_index_path' for #<#<Class:0x103dd29e0>:0x103dd0a50>):
+    1: <%= form_for(@event) do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :title %><br />
+    4:     <%= f.text_field :title %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2179879820_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2179889020_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:17:34 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (11.5ms)
+Rendered events/new.html.erb within layouts/application (13.3ms)
+Completed   in 80ms
+
+ActionView::Template::Error (undefined method `events_index_path' for #<#<Class:0x103fe84f0>:0x103fe6970>):
+    1: <%= form_for(@event) do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :title %><br />
+    4:     <%= f.text_field :title %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2180973620_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180982500_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:17:34 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (11.2ms)
+Rendered events/new.html.erb within layouts/application (13.0ms)
+Completed   in 23ms
+
+ActionView::Template::Error (undefined method `events_index_path' for #<#<Class:0x103e14e08>:0x103e13288>):
+    1: <%= form_for(@event) do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :title %><br />
+    4:     <%= f.text_field :title %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2180016300_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180025240_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.6ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.2ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:24:40 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (62.5ms)
+Rendered events/new.html.erb within layouts/application (64.8ms)
+Completed   in 92ms
+
+ActionView::Template::Error (undefined local variable or method `post_path' for #<#<Class:0x103c61fc0>:0x103c602d8>):
+    1: <%= form_for :event, @event, :url=>post_path do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :title %><br />
+    4:     <%= f.text_field :title %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2179125320_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2179134400_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.4ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:24:58 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2180219720_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:1)
+Rendered events/_form.html.erb (118.3ms)
+Rendered events/new.html.erb within layouts/application (148.3ms)
+Completed 200 OK in 162ms (Views: 157.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events/google.com" for 127.0.0.1 at Wed Feb 16 13:25:08 -0500 2011
+
+ActionController::RoutingError (No route matches "/events/google.com"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started POST "/events/google.com" for 127.0.0.1 at Wed Feb 16 13:25:37 -0500 2011
+
+ActionController::RoutingError (No route matches "/events/google.com"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:25:44 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (83.0ms)
+Rendered events/new.html.erb within layouts/application (85.1ms)
+Completed   in 96ms
+
+ActionView::Template::Error (undefined local variable or method `index_path' for #<#<Class:0x103c99088>:0x103c97300>):
+    1: <%= form_for :event, @event, :url=>index_path do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :title %><br />
+    4:     <%= f.text_field :title %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2179237440_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2179247000_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.9ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.9ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:26:04 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (8.8ms)
+Rendered events/new.html.erb within layouts/application (11.1ms)
+Completed   in 22ms
+
+ActionView::Template::Error (undefined local variable or method `index_post_path' for #<#<Class:0x103e65ec0>:0x103e60e48>):
+    1: <%= form_for :event, @event, :url=>index_post_path do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :title %><br />
+    4:     <%= f.text_field :title %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2180163300_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180182780_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.4ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:26:12 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (7.6ms)
+Rendered events/new.html.erb within layouts/application (9.6ms)
+Completed   in 20ms
+
+ActionView::Template::Error (undefined local variable or method `index_events_path' for #<#<Class:0x103cb4608>:0x103cb1bd8>):
+    1: <%= form_for :event, @event, :url=>index_events_path do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :title %><br />
+    4:     <%= f.text_field :title %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2179292500_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2179301380_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:26:17 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (8.0ms)
+Rendered events/new.html.erb within layouts/application (10.0ms)
+Completed   in 21ms
+
+ActionView::Template::Error (undefined local variable or method `index_event_path' for #<#<Class:0x103f11fe0>:0x103f10460>):
+    1: <%= form_for :event, @event, :url=>index_event_path do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :title %><br />
+    4:     <%= f.text_field :title %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2180526280_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180543600_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:26:34 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2179563840_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:1)
+Rendered events/_form.html.erb (6.0ms)
+Rendered events/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 23ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:26:42 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (3.8ms)
+Rendered events/new.html.erb within layouts/application (5.8ms)
+Completed   in 17ms
+
+ActionView::Template::Error (No route matches {:controller=>"events", :action=>"show"}):
+    1: <%= form_for :event, @event, :url=>event_path do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :title %><br />
+    4:     <%= f.text_field :title %>
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2180760780_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180769680_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.1ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:27:19 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2179837720_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:1)
+Rendered events/_form.html.erb (6.2ms)
+Rendered events/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 20ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:41:07 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2180994120_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:3)
+Rendered events/_form.html.erb (6.2ms)
+Rendered events/new.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 101ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:41:19 -0500 2011
+  Processing by EventsController#new as HTML
+Rendered events/_form.html.erb (7.2ms)
+Rendered events/new.html.erb within layouts/application (9.4ms)
+Completed   in 20ms
+
+ActionView::Template::Error (undefined method `javascript_include_ta' for #<#<Class:0x103ee91d0>:0x103ee7628>):
+    1: <%= javascript_include_ta "rails" %>
+    2: 
+    3: <%= form_for :event, @event, :url=>"s" do |f| %>
+    4:   <div class="field">
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__1736877526_2180450700_871230'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__92535544_2180459700_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.8ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:41:22 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2179473500_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:3)
+Rendered events/_form.html.erb (9.0ms)
+Rendered events/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 25ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:48:25 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2180620760_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:20)
+Rendered events/_form.html.erb (6.7ms)
+Rendered events/new.html.erb within layouts/application (50.5ms)
+Completed 200 OK in 176ms (Views: 171.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:48:59 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2179899240_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:21)
+Rendered events/_form.html.erb (6.4ms)
+Rendered events/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 21ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:50:00 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2180701100_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:21)
+Rendered events/_form.html.erb (6.6ms)
+Rendered events/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 21ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:54:00 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2179972240_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:21)
+Rendered events/_form.html.erb (6.3ms)
+Rendered events/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 23ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:54:12 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2180756280_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:21)
+Rendered events/_form.html.erb (7.0ms)
+Rendered events/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 22ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:54:16 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2180037000_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:21)
+Rendered events/_form.html.erb (7.5ms)
+Rendered events/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 23ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:54:19 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2180755440_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:21)
+Rendered events/_form.html.erb (7.0ms)
+Rendered events/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 22ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:54:40 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2180015800_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:21)
+Rendered events/_form.html.erb (6.7ms)
+Rendered events/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 28ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 13:54:42 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2180732060_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:21)
+Rendered events/_form.html.erb (6.8ms)
+Rendered events/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 22ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 14:13:29 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2179952240_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:23)
+Rendered events/_form.html.erb (6.3ms)
+Rendered events/new.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 36ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 14:15:52 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2180629800_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:23)
+Rendered events/_form.html.erb (6.4ms)
+Rendered events/new.html.erb within layouts/application (135.6ms)
+Completed 200 OK in 147ms (Views: 141.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events/create" for 127.0.0.1 at Wed Feb 16 14:15:53 -0500 2011
+
+ActionController::RoutingError (No route matches "/events/create"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 14:21:32 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2179703380_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:23)
+Rendered events/_form.html.erb (7.0ms)
+Rendered events/new.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 99ms (Views: 94.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events/create" for 127.0.0.1 at Wed Feb 16 14:21:32 -0500 2011
+
+ActionController::RoutingError (No route matches "/events/create"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/events/create" for 127.0.0.1 at Wed Feb 16 14:21:39 -0500 2011
+
+AbstractController::ActionNotFound (The action 'show' could not be found for EventsController):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/events/create" for 127.0.0.1 at Wed Feb 16 14:22:38 -0500 2011
+
+AbstractController::ActionNotFound (The action 'show' could not be found for EventsController):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/events/create" for 127.0.0.1 at Wed Feb 16 14:22:39 -0500 2011
+
+AbstractController::ActionNotFound (The action 'show' could not be found for EventsController):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/events/create" for 127.0.0.1 at Wed Feb 16 14:23:25 -0500 2011
+  Processing by EventsController#show as HTML
+  Parameters: {"id"=>"create"}
+Completed   in 4ms
+
+ActionView::MissingTemplate (Missing template events/show with {:handlers=>[:erb, :builder, :rjs, :rhtml, :rxml], :locale=>[:en, :en], :formats=>[:html]} in view paths "/Users/heranyang/Workspace/rubyOnRails/soka/app/views"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/events/create" for 127.0.0.1 at Wed Feb 16 14:24:33 -0500 2011
+  Processing by EventsController#show as HTML
+  Parameters: {"id"=>"create"}
+Rendered events/show.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/create" for 127.0.0.1 at Wed Feb 16 14:24:46 -0500 2011
+  Processing by EventsController#show as HTML
+  Parameters: {"id"=>"create"}
+Rendered events/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 14:25:00 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2179930580_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:23)
+Rendered events/_form.html.erb (6.2ms)
+Rendered events/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 39ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events/create" for 127.0.0.1 at Wed Feb 16 14:25:00 -0500 2011
+
+ActionController::RoutingError (No route matches "/events/create"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/events/create" for 127.0.0.1 at Wed Feb 16 14:30:26 -0500 2011
+  Processing by EventsController#show as HTML
+  Parameters: {"id"=>"create"}
+Rendered events/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 14:31:49 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2180563980_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:23)
+Rendered events/_form.html.erb (6.4ms)
+Rendered events/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 23ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events/create" for 127.0.0.1 at Wed Feb 16 14:31:49 -0500 2011
+
+ActionController::RoutingError (No route matches "/events/create"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 14:32:32 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2179833600_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:23)
+Rendered events/_form.html.erb (6.3ms)
+Rendered events/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 23ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 14:32:33 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2180949680_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:23)
+Rendered events/_form.html.erb (6.6ms)
+Rendered events/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 21ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 14:48:03 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2180315720_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:23)
+Rendered events/_form.html.erb (7.3ms)
+Rendered events/new.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 46ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events/create_event" for 127.0.0.1 at Wed Feb 16 14:48:03 -0500 2011
+
+ActionController::RoutingError (No route matches "/events/create_event"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 14:48:59 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2180672120_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:23)
+Rendered events/_form.html.erb (6.0ms)
+Rendered events/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 20ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events/create_event" for 127.0.0.1 at Wed Feb 16 14:48:59 -0500 2011
+
+ActionController::RoutingError (No route matches "/events/create_event"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 14:49:46 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2179671880_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:23)
+Rendered events/_form.html.erb (6.4ms)
+Rendered events/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 20ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events/create_event" for 127.0.0.1 at Wed Feb 16 14:49:46 -0500 2011
+
+ActionController::RoutingError (No route matches "/events/create_event"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 14:50:13 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2160067340_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:23)
+Rendered events/_form.html.erb (56.4ms)
+Rendered events/new.html.erb within layouts/application (60.1ms)
+Completed 200 OK in 71ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events/create_event" for 127.0.0.1 at Wed Feb 16 14:50:14 -0500 2011
+
+ActionController::RoutingError (No route matches "/events/create_event"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 15:02:10 -0500 2011
+
+NameError (undefined local variable or method `events' for #<ActionDispatch::Routing::Mapper:0x10405cf58>):
+  config/routes.rb:5
+  config/routes.rb:1
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.3ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 15:03:14 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2180302260_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:23)
+Rendered events/_form.html.erb (6.1ms)
+Rendered events/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 22ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events/create_event" for 127.0.0.1 at Wed Feb 16 15:03:14 -0500 2011
+  Processing by EventsController#create_event as 
+  Parameters: {"name"=>"John", "location"=>"Boston"}
+Rendered text template (0.0ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 15:08:25 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2181016820_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:23)
+Rendered events/_form.html.erb (6.1ms)
+Rendered events/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 24ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events/create_event" for 127.0.0.1 at Wed Feb 16 15:08:25 -0500 2011
+  Processing by EventsController#create_event as 
+  Parameters: {"name"=>"John", "location"=>"Boston"}
+Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 15:16:26 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2181407820_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:23)
+Rendered events/_form.html.erb (6.0ms)
+Rendered events/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 19ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events/create_event" for 127.0.0.1 at Wed Feb 16 15:16:27 -0500 2011
+  Processing by EventsController#create_event as 
+  Parameters: {"name"=>"John", "location"=>"Boston"}
+Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 15:17:04 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2180526980_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:23)
+Rendered events/_form.html.erb (6.1ms)
+Rendered events/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 20ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events/create_event" for 127.0.0.1 at Wed Feb 16 15:17:04 -0500 2011
+  Processing by EventsController#create_event as 
+  Parameters: {"name"=>"John", "location"=>"Boston"}
+Rendered text template (0.0ms)
+Completed 200 OK in 14ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 15:18:34 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2180966260_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:23)
+Rendered events/_form.html.erb (8.0ms)
+Rendered events/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 25ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events/create_event" for 127.0.0.1 at Wed Feb 16 15:18:34 -0500 2011
+  Processing by EventsController#create_event as 
+  Parameters: {"name"=>"John", "location"=>"Boston"}
+Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at Wed Feb 16 15:18:44 -0500 2011
+  Processing by EventsController#new as HTML
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_events__form_html_erb__1736877526_2181231340_871230 at /Users/heranyang/Workspace/rubyOnRails/soka/app/views/events/_form.html.erb:23)
+Rendered events/_form.html.erb (6.4ms)
+Rendered events/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 22ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events/create_event" for 127.0.0.1 at Wed Feb 16 15:18:45 -0500 2011
+  Processing by EventsController#create_event as 
+  Parameters: {"name"=>"John", "location"=>"Boston"}
+Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+  [1m[35mSQL (0.3ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "password" varchar(255), "birthday" date, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110216225002')
+Migrating to Events (20110216225948)
+  [1m[36mSQL (0.2ms)[0m  [1m ALTER TABLE Events
+ ADD CONSTRAINT fk_user
+ FOREIGN KEY (user_id)
+ REFERENCES Users(user_id)
+[0m
+SQLite3::SQLException: near "CONSTRAINT": syntax error:      ALTER TABLE Events
+      ADD CONSTRAINT fk_user
+      FOREIGN KEY (user_id)
+      REFERENCES Users(user_id)
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+Migrating to Events (20110216225948)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m ALTER TABLE Events
+ ADD CONSTRAINT fk_user
+ FOREIGN KEY (user_id)
+ REFERENCES Users(user_id)
+[0m
+SQLite3::SQLException: near "CONSTRAINT": syntax error:      ALTER TABLE Events
+      ADD CONSTRAINT fk_user
+      FOREIGN KEY (user_id)
+      REFERENCES Users(user_id)
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+Migrating to Events (20110216225948)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m ALTER TABLE Events
+ ADD CONSTRAINT fk_user
+ FOREIGN KEY (user_id)
+ REFERENCES Users(user_id)
+[0m
+SQLite3::SQLException: near "CONSTRAINT": syntax error:      ALTER TABLE Events
+      ADD CONSTRAINT fk_user
+      FOREIGN KEY (user_id)
+      REFERENCES Users(user_id)
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+Migrating to Events (20110216225948)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m ALTER TABLE Events ADD CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES Users(user_id)
+[0m
+SQLite3::SQLException: near "CONSTRAINT": syntax error:      ALTER TABLE Events ADD CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES Users(user_id)
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+Migrating to Events (20110216225948)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m ALTER TABLE events
+ ADD CONSTRAINT fk_user
+ FOREIGN KEY (user_id)
+ REFERENCES users(user_id)
+[0m
+SQLite3::SQLException: near "CONSTRAINT": syntax error:      ALTER TABLE events
+      ADD CONSTRAINT fk_user
+      FOREIGN KEY (user_id)
+      REFERENCES users(user_id)
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+Migrating to Events (20110216225948)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.3ms)[0m  [1m ALTER TABLE Events
+ ADD CONSTRAINT fk_user
+ FOREIGN KEY (user_id)
+ REFERENCES Users(id)
+[0m
+SQLite3::SQLException: near "CONSTRAINT": syntax error:      ALTER TABLE Events
+      ADD CONSTRAINT fk_user
+      FOREIGN KEY (user_id)
+      REFERENCES Users(id)
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+Migrating to Events (20110216225948)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20110216225948')[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("events")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mUsers Load (19.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+Migrating to Events (20110216225948)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("events")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+Migrating to Events (20110216225948)
+Migrating to CreateSchedules (20110217054219)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+Migrating to Events (20110216225948)
+Migrating to CreateSchedules (20110217054219)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (13.6ms)[0m  [1mCREATE TABLE "schedules" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110217054219')
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("events")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("schedules")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+Migrating to Events (20110216225948)
+Migrating to CreateSchedules (20110217054219)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("events")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("schedules")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (32.6ms)[0m  INSERT INTO "users" ("birthday", "email", "updated_at", "name", "password", "created_at") VALUES (NULL, 'heranyang@gmail.com', '2011-02-17 05:51:53.933605', 'paul', NULL, '2011-02-17 05:51:53.933605')
+  [1m[36mUsers Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started POST "/events/create_event" for 127.0.0.1 at Thu Feb 17 00:53:39 -0500 2011
+  Processing by EventsController#create_event as 
+  Parameters: {"name"=>"John", "location"=>"Boston"}
+Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+Migrating to Events (20110216225948)
+Migrating to CreateSchedules (20110217054219)
+Migrating to AfEvents (20110217060205)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+Migrating to Events (20110216225948)
+Migrating to CreateSchedules (20110217054219)
+Migrating to AfEvents (20110217060205)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+Migrating to Events (20110216225948)
+Migrating to CreateSchedules (20110217054219)
+Migrating to AfEvents (20110217060205)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1malter table 'events' add foreign key (u_id) references Users(id)[0m
+SQLite3::SQLException: near "foreign": syntax error: alter table 'events' add foreign key (u_id) references Users(id)
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+Migrating to Events (20110216225948)
+Migrating to CreateSchedules (20110217054219)
+Migrating to AfEvents (20110217060205)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1malter table 'events' add foreign key (u_id) references users(id)[0m
+SQLite3::SQLException: near "foreign": syntax error: alter table 'events' add foreign key (u_id) references users(id)
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+Migrating to Events (20110216225948)
+Migrating to CreateSchedules (20110217054219)
+Migrating to AfEvents (20110217060205)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.6ms)[0m  [1malter table events add integer u_id[0m
+  [1m[35mSQL (0.1ms)[0m  alter table 'events' add foreign key (u_id) references users(id)
+SQLite3::SQLException: near "foreign": syntax error: alter table 'events' add foreign key (u_id) references users(id)
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+Migrating to Events (20110216225948)
+Migrating to CreateSchedules (20110217054219)
+Migrating to AfEvents (20110217060205)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.4ms)[0m  [1malter table events add foreign key u_id references users(id)[0m
+SQLite3::SQLException: near "foreign": syntax error: alter table events add foreign key u_id references users(id)
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateEvents (20110216173229)
+Migrating to CreateUsers (20110216225002)
+Migrating to Events (20110216225948)
+Migrating to CreateSchedules (20110217054219)
+Migrating to AfEvents (20110217060205)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1malter table events add foreign key 'u_id' references users 'id'[0m
+SQLite3::SQLException: near "foreign": syntax error: alter table events add foreign key 'u_id' references users 'id'

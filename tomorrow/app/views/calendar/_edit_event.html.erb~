@@ -1,0 +1,5 @@
+<%= javascript_include_tag "jquery", "rails", "application" %>
+
+<script>
+  alert("edit_event!");
+</script>

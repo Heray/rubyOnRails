@@ -1,0 +1,12 @@
+
+
+<div class="event_show">
+  <div class="left_column_event_show">
+    picture
+  </div>
+  <div class="right_column_event_show">
+    <div class="event_show_detail">
+      Name, Event
+    </div>
+  </div>
+</div>

@@ -1,4 +1,0 @@
-<%= form_for(@events) do |f| %>
-  <div class="field">
-    <%= f.label :name %><br />
-  </div>
