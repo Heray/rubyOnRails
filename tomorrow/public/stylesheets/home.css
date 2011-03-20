@@ -1,0 +1,14 @@
+
+.whole {
+   width: 400;
+   hight: 1000;
+   border-style: sold;
+   border-width: 5px;
+}
+
+.each {
+   width: 300;
+   hight: 200;
+   border-style: solid;
+   border-width: 2px;
+}

@@ -4,7 +4,7 @@
   <div class="hour_slot_class" hour_slot="<%= i %>"> 
     <% j = i*2 %>
     <% ['first_half_hour','second_half_hour'].each do |half_slot| %>
-    
+
 
 
       <h4><%= @slot_names[j] %>:</h4>
@@ -27,7 +27,7 @@
       <% end %>
       <% j += 1 %>
     <% end %>
-  
+
   </div>
 <% end %>
 
@@ -58,20 +58,26 @@
 var edit = false;
 $(".added_time_slot").click(function() {
    edit = true;
-   alert("ediiiit!");
+   $(".event_detail").fadeIn("slow");
+
 });
 
 
 $(".hour_slot_class").click(function() {
-   if (edit) { 
+   $(".add_event").hide();
+   if (edit) {
      edit = false;
-     return; 
+
+     return;
    }
+   $(".event_detail").hide();
    var st = $(this).attr("hour_slot");
    $('input[name*="add_start_time"]').val(st);
    $('input[name*="add_end_time"]').val(st+1);
-   $(".add_event").show();
+   $(".add_event").fadeIn("slow");
 
+
+   $(".filtered_events").hide();
    var fields = st
    $.ajax( {
      type: "POST",
@@ -79,6 +85,7 @@ $(".hour_slot_class").click(function() {
      async: true,
      data:fields,
    });
+   $(".filtered_events").fadeIn("slow");
 
 });
 </script>

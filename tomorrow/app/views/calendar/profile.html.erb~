@@ -1,7 +1,10 @@
-<!--  -->
+<%= javascript_include_tag "jquery","jqueryui","jquerymin","demosMain", "rails", "application" %>
+<%= javascript_include_tag "mootools-yui-compressed.js" %>
+
+<!--  --> 
 
 <head>
-<link rel="stylesheet" type="text/css" href="calendar.css" />
+
 </head>
 
 <div class="top_bar">
@@ -9,33 +12,45 @@
 </div>
 
 <div class="window">
-  
+
   <div class="display_box">
-    
+
     <div class="left_half">
+      <div class="calendar_bar">
+         calendar_bar
+      </div>
+
       <%= render 'list_events' %>
     </div>
-    
+
     <div class="right_half">
       <div class="sub_right_half">
-	<!-- my_info includes all my info. as twitter's initial right half -->
+	<!-- my_info includes all my info. as twitter s initial right half -->
 	<%= render 'my_info' %>
 
-	<!-- triggered from clicking at empty slots. includes both --
-	  -- adding and filter events -->
-	<%= render 'add_event' %>
+      </div>
+
+      <div class="popup_right_half">
+        <div class="absolute_right">
+
+	  <!-- triggered from clicking at empty slots. includes both --
+	    -- adding and filter events -->
+	  <%= render 'add_event' %>
 
 
-	<!-- triggered from clicking at planned slots. includes --
-	  -- viewing detail, edit, and filter events -->
-	<%= render 'edit_event' %>
+	  <!-- triggered from clicking at planned slots. includes --
+	    -- viewing detail, edit, and filter events -->
+	  <%= render 'edit_event' %>
+        </div>
+
 
 
 
       </div>
     </div>
-    
+
   </div>
 
 </div>
+
 

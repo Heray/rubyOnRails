@@ -1,17 +1,19 @@
-<%= javascript_include_tag "jquery", "rails", "application" %>
 
 <% for i in 0..((@slot_names.length-1)/2) %>
   <div class="hour_slot_class" hour_slot="<%= i %>"> 
     <% j = i*2 %>
-    <% ['first_half_hour','second_half_hour'].each do |half_slot| %>
+    <div class="time_sign_hour">
+       <%= @slot_names[j] %>
+    </div>
+    <div class="event_slot">
+    <% [0,0.5].each do |half_slot| %>
 
 
+      <div class="half_hour_slot" half_slot="<%= half_slot+i %>">
 
-      <h4><%= @slot_names[j] %>:</h4>
-      <% @slots[j].each do |slot| %>
-        <div class="<%= half_slot %>">
+        <% @slots[j].each do |slot| %>
           <div class="added_time_slot">
-            <div class="time">
+            <div class="added_time">
               <%= if slot.start_time 
 		  slot.start_time.hour + slot.start_time.min 
 		  end%> - 
@@ -20,13 +22,13 @@
 		  end%>
 	    </div>
 	  </div>
-        </div>
-	<div class="title">
-          <%= slot.title %>
-	</div>
-      <% end %>
+        <% end %>
+      </div>
+
+
       <% j += 1 %>
     <% end %>
+    </div>
 
   </div>
 <% end %>
@@ -54,39 +56,17 @@
 <% end %>
 </table>
 
+
+
+
+
 <script>
-var edit = false;
-$(".added_time_slot").click(function() {
-   edit = true;
-   $(".event_detail").fadeIn("slow");
 
-});
+$('.schedule').css("height", (window.innerHeight-100));
+$('.sub_right_half').css("height", (window.innerHeight-100));
 
 
-$(".hour_slot_class").click(function() {
-   $(".add_event").hide();
-   if (edit) {
-     edit = false;
-
-     return;
-   }
-   $(".event_detail").hide();
-   var st = $(this).attr("hour_slot");
-   $('input[name*="add_start_time"]').val(st);
-   $('input[name*="add_end_time"]').val(st+1);
-   $(".add_event").fadeIn("slow");
 
 
-   $(".filtered_events").hide();
-   var fields = st
-   $.ajax( {
-     type: "POST",
-     url: "filter_events",
-     async: true,
-     data:fields,
-   });
-   $(".filtered_events").fadeIn("slow");
 
-});
 </script>
-   

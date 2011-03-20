@@ -1,19 +1,25 @@
-<%= javascript_include_tag "jquery", "rails", "application" %>
 
 <div class="add_event">
 
   <form action="javascript:add_event_click();">
     <div class="input_time">
-      <label>Title </label>
-      <input type="text" name="title"/>
-                           <br />
-      <label>Start Time</label>
-                           <input type="text" name="add_start_time" value = ""/>
-      <br />
-      <label>End Time</label>
+      <label>When </label>
+      <input type="text" name="add_start_time" value = ""/>
+      <a> to </a>
       <input type="text" name="add_end_time" value = ""/>
       <br />
+
+      <label>What </label>
+      <input type="text" name="title"/>
+      <br />
+
+      <label>Calendar </label>
+      <input type="text" name="calendar"/>
+      <br />
+
+
       <input type="submit" name="submit"/>
+      <button id="add_submit">add submit</button>
     </div>
   </form>
 </div>
@@ -23,25 +29,8 @@
 
 
 
-  <script>
-    function add_event_click() {
-      var fields = $("form").serializeArray();
 
-      var res = $.ajax( {
-        type: "POST",
-        url: "add_event",
-        async: false,
-        data:fields,
-      }).responseText;
 
-      if (res=="OK") {
-        alert(res);
-
-        $(".add_event").hide();
-      }
-    };
-
-  </script>
 
 
 

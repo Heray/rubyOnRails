@@ -1,13 +1,14 @@
 <%= javascript_include_tag "jquery", "rails", "application" %>
+
 <div class="add_event">
 
   <form action="javascript:add_event_click();">
     <div class="input_time">
       <label>Title </label>
       <input type="text" name="title"/>
-      <br />
+                           <br />
       <label>Start Time</label>
-      <input type="text" name="add_start_time" value = ""/>
+                           <input type="text" name="add_start_time" value = ""/>
       <br />
       <label>End Time</label>
       <input type="text" name="add_end_time" value = ""/>
@@ -18,6 +19,9 @@
 </div>
 
 <div class="filtered_events"></div>
+
+
+
 
   <script>
     function add_event_click() {

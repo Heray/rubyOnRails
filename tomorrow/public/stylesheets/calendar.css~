@@ -19,12 +19,12 @@ body {background-color:#b0c4de;}
 
 .display_box {
    width:950px;
-   
-   top:50px;
+   position:relative;   
+   top:40px;
    border-style:solid;
-   border-width:10px;
-   z-index:9;
-   clear:both;
+   border-width:1px;
+   z-index:8;
+
 }	     
 
 .left_half {
@@ -39,6 +39,19 @@ body {background-color:#b0c4de;}
    float:left;
 
 }
+
+
+.calendar_bar {
+   position: fixed;
+   top:50;
+   left:0;
+   width:465px;
+   height:50px;
+   border-style: solid;
+   border-width: 3px;
+   z-index:11;	      
+}
+
 
 .right_half {
    position:relative;
@@ -58,6 +71,19 @@ body {background-color:#b0c4de;}
 
 }
 
+.popup_right_half {
+   position:relative;
+
+}
+
+.absolute_right {
+   position: fixed;
+   border-style: solid;
+   border-width: 5px;
+   top: 60px;
+   min-width: 400px;
+}
+
 .add_event {
    display:none;
    position:relative;
@@ -66,12 +92,19 @@ body {background-color:#b0c4de;}
 }
 
 .filtered_events {
+   display:none;
    position:relative;
 
    border-style:solid;
    border-width:3px;
 }
 
+
+/* event_detail */
+.event_detail {
+   display: none;
+   position: relative;
+}
 
 
 /* _list_events */
@@ -92,4 +125,9 @@ body {background-color:#b0c4de;}
 .edit_event {
    display: none;
    
+}
+
+/* my_info */
+.my_info {
+
 }

@@ -1,0 +1,7 @@
+
+.whole {
+   width: 400;
+   hight: 1000;
+   border-style: sold;
+   border-width: 5px;
+}

@@ -4,8 +4,8 @@ Tomorrow::Application.routes.draw do
   match 'calendar/add_event' => 'calendar#add_event'
   match 'calendar/filter_events' => 'calendar#filter_events'
 
-  get "home/index"
-  resources :home
+  match 'home/trial' => 'home#trial'
+
 
 
   # The priority is based upon order of creation:
@@ -57,7 +57,7 @@ Tomorrow::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => "home#index"
+  # root :to => "home#index"
 
   # See how all your routes lay out with "rake routes"
 
