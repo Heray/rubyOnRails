@@ -1,0 +1,17 @@
+
+<div class="added_events_block" date='<%= @current_time %>'>
+   <% @slots.each do |slots| %>
+        <% slots.each do |slot| %>
+          <div class="added_time_slot">
+            <div class="added_time">
+              <%= if slot.start_time
+		  slot.start_time.hour + slot.start_time.min
+		  end %> -
+	      <%= if slot.end_time
+		  slot.end_time.hour+slot.end_time.min
+		  end %>
+	    </div>
+	  </div>
+        <% end %>
+   <% end %>
+</div>

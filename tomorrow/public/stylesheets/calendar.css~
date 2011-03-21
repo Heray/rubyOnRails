@@ -22,33 +22,44 @@ body {background-color:#b0c4de;}
    position:relative;   
    top:40px;
    border-style:solid;
-   border-width:1px;
+   border-width:0px;
    z-index:8;
 
 }	     
 
 .left_half {
+   background-color:#FFFFFF;
+   position:relative;
    position:relative;
    width: 465px;
-   left: 5px;
-   top: 5px;
-
+   float:left;
    border-style:solid;
    border-width:3px;
+   border-color:#736F6E;
+
+   left:5px;
+   top: 35px;
+
+}
+
+.schedule {
+   width: 465px;
 
    float:left;
+   overflow:auto;
 
 }
 
 
 .calendar_bar {
+   background-color:#A0A0A0;
    position: fixed;
-   top:50;
-   left:0;
-   width:465px;
-   height:50px;
+   top:50px;
+   width:467px;
+   height:30px;
    border-style: solid;
-   border-width: 3px;
+   border-width: 2px;
+   border-color:#A0A0A0;
    z-index:11;	      
 }
 
@@ -56,11 +67,11 @@ body {background-color:#b0c4de;}
 .right_half {
    position:relative;
    top:5px;
-   left:5px;
+   left:3px;
    width:465px;
 
    border-style:solid;
-   border-width:3px;
+   border-width:0px;
    float:left;
 
 }
@@ -68,27 +79,32 @@ body {background-color:#b0c4de;}
 .sub_right_half {
    position:relative;
    margin:25px 10px 25px 10px;
-
+   height:400px;
 }
 
 .popup_right_half {
-   position:relative;
+   display:none;
 
+   position:relative;
 }
 
 .absolute_right {
+   background-color:#FFFFFF;
+
    position: fixed;
    border-style: solid;
-   border-width: 5px;
+   border-width: 0px;
    top: 60px;
    min-width: 400px;
+   padding:10px;
 }
 
 .add_event {
    display:none;
    position:relative;
    border-style:solid;
-   border-width:3px;
+   border-width:1px;
+   margin-bottom:10px;
 }
 
 .filtered_events {
@@ -96,7 +112,7 @@ body {background-color:#b0c4de;}
    position:relative;
 
    border-style:solid;
-   border-width:3px;
+   border-width:1px;
 }
 
 
@@ -111,15 +127,53 @@ body {background-color:#b0c4de;}
 
 .hour_slot_class {
    
-   border-style:solid;
-   border-width:1px;
+   border-bottom-style:solid;
+   border-bottom-width:1px;
+   border-bottom-color:#D0D0D0;
+   height:60px;
 }
 
-.added_time_slot .time {
+.time_sign_hour {
+   width:40px;
+   border-right-style:solid;
+   border-right-width:1px;
+   border-right-color:#D0D0D0;
+   padding-right:5px;
+   text-align:right;
+   height:60px;
+
+   color:#404040;
+
+   float:left;
+}
+
+.event_slot {
+   width:400px;
+
+   height:60px;
+   float:left;
+}
+
+.added_time_slot {
+   display: none;
    background-color:#3366cc;
    color:white;
+
 }
 
+.half_hour_slot {
+   height:30px;
+   border-bottom-style:solid;
+   border-bottom-width:1px;
+   border-bottom-color:#F0F0F0;
+}
+
+.perm_event_block {
+   background-color:#D0D0D0;	     
+   position:relative;
+   width:350px;
+   height:30px;
+}
 
 /* _edit_events */
 .edit_event {

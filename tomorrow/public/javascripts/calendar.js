@@ -1,5 +1,27 @@
 $(window).scroll(scroll_or_resize);
 $(window).resize(scroll_or_resize);
+var current_date = Date.today().toString('yyyy-M-d')
+
+function perm_resize_update_when() {
+}
+
+function perm_drag_update_when() {
+}
+
+var resize_var = {
+    grid:30.5, 
+    minHeight:30.5, 
+    minWidth:350,
+    maxWidth:350,
+    resize:perm_resize_update_when
+};
+
+var drag_var = {
+    snap: ".half_hour_slot",
+    axis: "y",
+    drag:perm_drag_update_when
+};
+
 
 /* profile */
 function scroll_or_resize(){
@@ -13,9 +35,26 @@ function scroll_or_resize(){
     
 }
 
-    
 
 /* list events */
+function refresh_event_list() {
+    var res = $.ajax( {
+	type: "GET",
+	url: "list_events",
+	async: false,
+	data:[{
+	    name: "current_date",
+	    value: current_date
+	}]
+    }).responseText;
+
+    $('.for_adding_events_block').append(res);
+
+    $('.perm_event_block').resizable(resize_var);
+    $('.perm_event_block').draggable(drag_var);
+
+}
+refresh_event_list();
 
 var edit = false;
 $(".added_time_slot").click(function() {
@@ -53,9 +92,12 @@ function drag_update_when(event, ui) {
     $('input[name*="add_end_time"]').val(ed_time);
 }
 
+var temp_eb_counter = 0;
+var temp_eb_list = new Array();
+
 var resize_var = {
-    grid:30, 
-    minHeight:30, 
+    grid:30.5, 
+    minHeight:30.5, 
     minWidth:350,
     maxWidth:350,
     resize:resize_update_when
@@ -67,18 +109,15 @@ var drag_var = {
     drag:drag_update_when
 };
 
-var temp_eb_counter = 0;
-var temp_eb_list = new Array();
-
-function perm_add_event_block(id, st, ed) {
+function temp_add_event_block(id, st, ed) {
     if (temp_eb_list.length > 0) 
 	temp_eb_list.pop().hide();
 
     var cond = 'div[half_slot="'+id+'"]';
-    var div_str = '<div class="perm_event_block" eb_id="'
+    var div_str = '<div class="temp_event_block" eb_id="'
 	+ temp_eb_counter  +'"></div>';
     $(cond).append(div_str);
-    var this_eb = $( ".perm_event_block" );
+    var this_eb = $( ".temp_event_block" );
     this_eb.resizable(resize_var);
     this_eb.draggable(drag_var);
     temp_eb_list.push(this_eb);
@@ -100,7 +139,7 @@ $(".half_hour_slot").click(function() {
     var st = parseFloat(id,10);
     var ed = st+1;
 
-    perm_add_event_block(id, st, ed);
+    temp_add_event_block(id, st, ed);
 
     $('input[name*="add_start_time"]').val(st);
     $('input[name*="add_end_time"]').val(ed);
@@ -134,9 +173,19 @@ var calendar_bar_pos = $(".display_box").position().left+5;
 $(".calendar_bar").css("left",calendar_bar_pos);
 
 /* add event */
+$("#add_submit").button();
+$("#add_submit").click(add_event_click);
+
+var event_add_clicked = false;
+
 function add_event_click() {
+    if (event_add_clicked) return;
+    event_add_clicked = true;
     var fields = $("form").serializeArray();
-    
+    fields.push({
+	name: "current_date",
+	value: current_date
+    });
     var res = $.ajax( {
         type: "POST",
         url: "add_event",
@@ -146,11 +195,10 @@ function add_event_click() {
     
     if (res=="OK") {
         alert(res);
-	
+	event_add_clicked = false;
         $(".add_event").hide();
     }
 };
-$("#add_submit").button();
 
 
 

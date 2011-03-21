@@ -1,0 +1,20 @@
+
+<div class="added_events_block" date="<%= @current_date %>">
+   <% @slots.each do |slots| %>
+        <% slots.each do |slot| %>
+          <% hgt = (slot.end_time.hour - slot.start_time.hour) * 61 %>
+          <% top = (slot.start_time.hour) * 61 %>
+          <div class="perm_event_block" perm_event_id="<%= slot.id %>"
+                 style="height:<%= hgt %>px; top:<%= top %>px">
+            <div class="added_time">
+              <%= if slot.start_time
+		  slot.start_time.hour + slot.start_time.min
+		  end %> -
+	      <%= if slot.end_time
+		  slot.end_time.hour+slot.end_time.min
+		  end %>
+	    </div>
+	  </div>
+        <% end %>
+   <% end %>
+</div>

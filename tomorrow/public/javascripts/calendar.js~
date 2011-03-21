@@ -1,5 +1,6 @@
 $(window).scroll(scroll_or_resize);
 $(window).resize(scroll_or_resize);
+var current_date = Date.today()
 
 /* profile */
 function scroll_or_resize(){
@@ -34,16 +35,37 @@ String.format = function() {
     return s;
 }
 
+function resize_update_when(event, ui) {
+    var obj = temp_eb_list[temp_eb_list.length-1]
+    var top_pos = obj.position().top;
+    var bottom_pos = top_pos+obj.height();
+    var st_time = Math.floor(top_pos/30)/2;
+    var ed_time = Math.floor(bottom_pos/30)/2;
+    $('input[name*="add_start_time"]').val(st_time);
+    $('input[name*="add_end_time"]').val(ed_time);
+}
+
+function drag_update_when(event, ui) {
+    var obj = temp_eb_list[temp_eb_list.length-1]
+    var st_time = Math.floor(obj.position().top/30)/2;
+    
+    var ed_time = st_time + Math.ceil(obj.height()/30)/2;
+    $('input[name*="add_start_time"]').val(st_time);
+    $('input[name*="add_end_time"]').val(ed_time);
+}
+
 var resize_var = {
     grid:30, 
     minHeight:30, 
     minWidth:350,
-    maxWidth:350
+    maxWidth:350,
+    resize:resize_update_when
 };
 
 var drag_var = {
     snap: ".half_hour_slot",
-    axis: "y"
+    axis: "y",
+    drag:drag_update_when
 };
 
 var temp_eb_counter = 0;
@@ -113,9 +135,19 @@ var calendar_bar_pos = $(".display_box").position().left+5;
 $(".calendar_bar").css("left",calendar_bar_pos);
 
 /* add event */
+$("#add_submit").button();
+$("#add_submit").click(add_event_click);
+
+var event_add_clicked = false;
+
 function add_event_click() {
+    if (event_add_clicked) return;
+    event_add_clicked = true;
     var fields = $("form").serializeArray();
-    
+    fields.push({
+	name: "current_date",
+	value: current_date
+    });
     var res = $.ajax( {
         type: "POST",
         url: "add_event",
@@ -125,11 +157,10 @@ function add_event_click() {
     
     if (res=="OK") {
         alert(res);
-	
+	event_add_clicked = false;
         $(".add_event").hide();
     }
 };
-$("#add_submit").button();
 
 
 

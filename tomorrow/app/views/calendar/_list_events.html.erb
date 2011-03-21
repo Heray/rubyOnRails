@@ -10,21 +10,7 @@
 
 
       <div class="half_hour_slot" half_slot="<%= half_slot+i %>">
-
-        <% @slots[j].each do |slot| %>
-          <div class="added_time_slot">
-            <div class="added_time">
-              <%= if slot.start_time 
-		  slot.start_time.hour + slot.start_time.min 
-		  end%> - 
-	      <%= if slot.end_time
-		  slot.end_time.hour+slot.end_time.min 
-		  end%>
-	    </div>
-	  </div>
-        <% end %>
       </div>
-
 
       <% j += 1 %>
     <% end %>
@@ -35,26 +21,6 @@
 
 
 <h3>my events</h3>
-
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Start Time</th>
-    <th>End Time</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @events.each do |event| %>
-  <tr>
-    <td><%= event.title %></td>
-    <td><%= event.start_time %></td>
-    <td><%= event.end_time %></td>
-  </tr>
-<% end %>
-</table>
 
 
 

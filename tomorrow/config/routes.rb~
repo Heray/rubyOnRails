@@ -6,8 +6,6 @@ Tomorrow::Application.routes.draw do
 
   match 'home/trial' => 'home#trial'
 
-  get "home/index"
-  resources :home
 
 
   # The priority is based upon order of creation:
@@ -59,7 +57,7 @@ Tomorrow::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => "home#index"
+  # root :to => "home#index"
 
   # See how all your routes lay out with "rake routes"
 

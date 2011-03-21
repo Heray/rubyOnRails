@@ -1,25 +1,12 @@
-require "cgi"
+require "date"
 
 class CalendarController < ApplicationController
 
   def initialize
     super
-    @user = User.where(:id=>1)
-  end
+    @user = User.all[0]
+    @calendar = Calendar.all[0]
 
-  def index
-    @calendar = Event.all
-  end
-
-  def profile
-    today = "2010-01-01"
-    tomorrow = "2020-01-02"
-    @events = Event.all
-    @event = Event.new
-
-
-    # start getting today's events
-    today_events = Event.where("start_time >= :td AND start_time < :tm", {:td=>today,:tm=>tomorrow})
 
     @slot_names = \
     ['12am','12:30am','1am','1:30am','2am','2:30am','3am','3:30am',\
@@ -28,6 +15,29 @@ class CalendarController < ApplicationController
     '12pm','12:30pm','1pm','1:30pm','2pm','2:30pm','3pm','3:30pm',\
     '4pm','4:30pm','5pm','5:30pm','6pm','6:30pm','7pm','7:30pm',\
     '8pm','8:30pm','9pm','9:30pm','10pm','10:30pm','11pm','11:30pm']
+
+
+  end
+
+  def index
+    @calendar = Event.all
+  end
+
+  def profile
+
+  end
+
+
+  def list_events
+    @current_time = params["current_time"]
+    today = "2010-01-01"
+    tomorrow = "2020-01-02"
+
+
+    # start getting today's events
+    today_events = Event.where("start_time >= ? AND start_time < ?", today, tomorrow)
+
+
 
     @slots_dic = {}
 
@@ -47,7 +57,7 @@ class CalendarController < ApplicationController
 	end
 
 	@slots[k].push(te)
-	
+
     end
     puts @slots
 
@@ -61,6 +71,8 @@ class CalendarController < ApplicationController
 
     @filtered_events = Event.where("start_time > :et OR end_time <:st",{:et=>"2010-01-01", :st=>"2010-01-01"})
 
+    render_to_string 'calendar/list_events.html.erb'
+
   end
 
   def filter_events
@@ -69,7 +81,7 @@ class CalendarController < ApplicationController
 
     @filtered_events = Event.where("start_time > :et OR end_time < :st",{:et=>endtime, :st=>starttime})
     @filter_event_str = open("app/views/calendar/_temp.html.erb").read.gsub("\n"," ")
-    
+
     render 'calendar/filtered_events.js.erb'
 
   end
@@ -77,11 +89,30 @@ class CalendarController < ApplicationController
 
   def add_event
     puts params
-    tt = params['title']
-    st = params['start_time']
-    et = params['end_time']
-    #@user.event.create(:title=>tt,:start_time=>st,:end_time=>et)
-    ne = Event.new(:title=>tt,:start_time=>st,:end_time=>et, :u_id=>@user)
+    tt = params['what']
+    sd = params['current_date']
+    rp = params['repeat']
+    rp = false
+    if not rp
+      ed = DateTime.new(2999,1,1,0,0)
+    end
+    ed = DateTime.new(2999,1,1,0,0)
+
+    st = params['add_start_time']
+    et = params['add_end_time']
+
+    #st = DateTime.new(sd.year, sd.month, sd.dat, st_h, st_m)
+
+    st_h = st.to_f.floor
+    st_m = (st.to_f - st_h) * 60
+    st = "%d:%d" % [st_h, st_m]
+
+    et_h = et.to_f.floor
+    et_m = (et.to_f - et_h) * 60
+    et = "%d:%d" % [et_h, et_m]
+
+    ne = @user.events.create(:title=>tt,:start_time=>st,:end_time=>et,:calendar_id=>@calendar,:start_date=>sd, :end_date=>ed)
+    #ne = Event.new(:title=>tt,:start_time=>st,:end_time=>et, :u_id=>@user)
     ne.save
 
     render :text => "OK"

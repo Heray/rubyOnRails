@@ -1,20 +1,64 @@
-<%= javascript_include_tag "jquery", "rails", "application" %>
 
 <div class="add_event">
 
   <form action="javascript:add_event_click();">
-    <div class="input_time">
-      <label>Title </label>
-      <input type="text" name="title"/>
-                           <br />
-      <label>Start Time</label>
-                           <input type="text" name="add_start_time" value = ""/>
-      <br />
-      <label>End Time</label>
+    <div class="input_general">
+      <label>When </label>
+      <input type="text" name="add_start_time" value = ""/>
+      <a> to </a>
       <input type="text" name="add_end_time" value = ""/>
       <br />
-      <input type="submit" name="submit"/>
+
+      <label>What </label>
+      <input type="text" name="add_what"/>
+      <br />
+
+      <label>Calendar </label>
+      <input type="text" name="add_calendar"/>
+      <br />
+
+      <label>Add friends </label>
+      <input type="text" name="add_friends" value = ""/>
+      <br />
+
+
     </div>
+    <div class="input_detail">
+       <label>Where </label>
+       <input type="text" name="add_where" value = ""/>
+       <br />
+       <label>Description </label>
+       <input type="text" name="add_description" value = ""/>
+       <br />
+       <label>Privacy </label>
+       <input type="text" name="add_privacy" value = ""/>
+       <br />
+       <label>All day? </label>
+       <input type="text" name="all_day" value = ""/>
+       <br />
+       <label>repeat? </label>
+       <input type="text" name="add_repeat" value = ""/>
+       <br />
+       <label>On days </label>
+       <input type="text" name="add_privacy" value = ""/>
+       <br />
+       <label>On months </label>
+       <input type="text" name="add_privacy" value = ""/>
+       <br />
+       <label>On years </label>
+       <input type="text" name="add_privacy" value = ""/>
+       <br />
+       <label>Email Notification </label>
+       <input type="text" name="add_privacy" value = ""/>
+       <br />
+       <label>Popup Notification </label>
+       <input type="text" name="add_privacy" value = ""/>
+       <br />
+
+    </div>
+
+    <button id="add_submit">add submit</button>
+
   </form>
 </div>
 
@@ -23,25 +67,8 @@
 
 
 
-  <script>
-    function add_event_click() {
-      var fields = $("form").serializeArray();
 
-      var res = $.ajax( {
-        type: "POST",
-        url: "add_event",
-        async: false,
-        data:fields,
-      }).responseText;
 
-      if (res=="OK") {
-        alert(res);
-
-        $(".add_event").hide();
-      }
-    };
-
-  </script>
 
 
 
