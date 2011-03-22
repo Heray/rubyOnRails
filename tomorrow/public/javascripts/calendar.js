@@ -74,6 +74,8 @@ function perm_event_clicked() {
 
     $(".event_detail").show();
     $(".popup_right_half").show();
+
+    filter_events(st, et, current_date);
 }
 
 /* list events */
@@ -160,6 +162,22 @@ function temp_add_event_block(id, st, ed) {
     temp_eb_counter ++;
 }
 
+//TODO: data fields is wrong
+function filter_events(st, et, cd) {
+    //cd: current date
+
+    $(".filtered_events").hide();
+    var fields = st
+    $.ajax( {
+	type: "POST",
+	url: "filter_events",
+	async: true,
+	data:fields,
+    });
+    $(".filtered_events").show();
+
+}
+
 $(".half_hour_slot").click(function() {
     $(".add_event").hide();
     if (edit) {
@@ -171,24 +189,15 @@ $(".half_hour_slot").click(function() {
     $(".event_detail").hide();
     var id = $(this).attr("half_slot");
     var st = parseFloat(id,10);
-    var ed = st+1;
+    var et = st+1;
 
-    temp_add_event_block(id, st, ed);
+    temp_add_event_block(id, st, et);
 
     $('input[name*="add_start_time"]').val(st);
-    $('input[name*="add_end_time"]').val(ed);
+    $('input[name*="add_end_time"]').val(et);
     $(".add_event").show();
 
-
-    $(".filtered_events").hide();
-    var fields = st
-    $.ajax( {
-	type: "POST",
-	url: "filter_events",
-	async: true,
-	data:fields,
-    });
-    $(".filtered_events").show();
+    filter_events(st, et, current_date);
     
     $(".popup_right_half").show();
 
