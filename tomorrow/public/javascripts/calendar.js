@@ -1,3 +1,11 @@
+$('.schedule').jScrollPane({animateTo:false});
+$(document).ready(
+   function() {
+   $('.schedule')[0].scrollTo(500);
+   return false;
+});
+
+
 $(window).scroll(scroll_or_resize);
 $(window).resize(scroll_or_resize);
 var current_date = Date.today().toString('yyyy-M-d')
@@ -25,16 +33,48 @@ var drag_var = {
 
 /* profile */
 function scroll_or_resize(){
-    var left = document.body.scrollLeft;
+/*
+    var db = $('.display_box');
+    db.height($(window).height()-80);
+    $('.left_half').height($(window).height()-120);
+    //$('.schedule').jScrollPane({animateTo:false});
+    $('.schedule').height($(window).height()-330);
+*/
+
+    var left = document.body.scrollLeft | window.pageXOffset;
     var calendar_bar_pos = $(".display_box").position().left + 5;
     var absolute_right_pos = $(".display_box").position().left + 475;
     $(".absolute_right").css("left",absolute_right_pos-left);
     $(".calendar_bar").css("left",calendar_bar_pos-left);
     
     $('.schedule').css("height", (window.innerHeight-100));
+
     
 }
 
+function close_popup_right_half() {
+    $(".popup_right_half").hide();
+    $(".filtered_events").hide();
+    $(".add_event").hide();
+    $(".event_detail").hide();
+}
+
+
+var edit = false;
+
+function perm_event_clicked() {
+    close_popup_right_half();
+    edit = true;
+    //alert($(this).attr("start_time"));
+    st = $(this).attr("start_time");
+    et = $(this).attr("end_time");
+
+    $("#ed_start_datetime").text(st);
+    $("#ed_end_datetime").text(et);
+
+    $(".event_detail").show();
+    $(".popup_right_half").show();
+}
 
 /* list events */
 function refresh_event_list() {
@@ -49,19 +89,13 @@ function refresh_event_list() {
     }).responseText;
 
     $('.for_adding_events_block').append(res);
-
-    $('.perm_event_block').resizable(resize_var);
-    $('.perm_event_block').draggable(drag_var);
+    var peb = $('.perm_event_block');
+    peb.resizable(resize_var);
+    peb.draggable(drag_var);
+    peb.click(perm_event_clicked);
 
 }
 refresh_event_list();
-
-var edit = false;
-$(".added_time_slot").click(function() {
-   edit = true;
-   $(".event_detail").show();
-
-});
 
 String.format = function() {
     var s = arguments[0];
@@ -161,13 +195,6 @@ $(".half_hour_slot").click(function() {
 
 });
 
-
-$('.schedule').jScrollPane({animateTo:false});
-$(document).ready(
-   function() {
-   $('.schedule')[0].scrollTo(500);
-   return false;
-});
 
 var calendar_bar_pos = $(".display_box").position().left+5;
 $(".calendar_bar").css("left",calendar_bar_pos);
