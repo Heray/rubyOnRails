@@ -1,15 +1,29 @@
 
-<div class="added_events_block" date='<%= @current_time %>'>
+<div class="added_events_block" date="<%= @current_date %>">
    <% @slots.each do |slots| %>
         <% slots.each do |slot| %>
-          <div class="added_time_slot">
+          <% hgt = (slot.end_time.hour - slot.start_time.hour) * 61 + slot.end_time.min - slot.start_time.min%>
+          <% top = (slot.start_time.hour) * 61 + slot.start_time.min %>
+          <div class="perm_event_block" perm_event_id="<%= slot.id %>"
+                 start_time="<%= slot.start_time %>"
+                 end_time="<%= slot.end_time %>"
+                 start_date="<%= slot.start_date %>"
+                 end_date="<%= slot.end_date %>"
+                 location="<%= slot.location %>"
+                 description="<%= slot.description %>"
+                 privacy="<%= slot.privacy %>"
+                 all_day="<%= slot.all_day %>"
+                 repeat="<%= slot.repeat %>"
+                 on_days="<%= slot.on_days %>"
+                 on_months="<%= slot.on_months %>"
+                 on_years="<%= slot.on_years %>"
+                 email_notif="<%= slot.email_notif %>"
+                 popup_notif="<%= slot.popup_notif %>"
+                 style="height:<%= hgt %>px; top:<%= top %>px">
             <div class="added_time">
-              <%= if slot.start_time
-		  slot.start_time.hour + slot.start_time.min
-		  end %> -
-	      <%= if slot.end_time
-		  slot.end_time.hour+slot.end_time.min
-		  end %>
+              <%= slot.title %> <br />
+              <%= "%d:%d" % [slot.start_time.hour,slot.start_time.min] %> -
+	      <%= "%d:%d" % [slot.end_time.hour, slot.end_time.min] %>
 	    </div>
 	  </div>
         <% end %>

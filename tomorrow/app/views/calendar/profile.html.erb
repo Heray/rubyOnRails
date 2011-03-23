@@ -1,6 +1,5 @@
 
 <div class="top_bar">
-  hey
 </div>
 <div class="top_bar_bottom"></div>
 
@@ -10,7 +9,7 @@
     <div class="left_half">
       <div class="schedule">
         <div class="calendar_bar">
-           calendar_bar
+           <span id="next_day">Next Day</span>
         </div>
         <div class="for_adding_events_block"></div>
 
@@ -29,13 +28,16 @@
         <div class="absolute_right">
 
 	  <!-- triggered from clicking at empty slots. includes both --
-	    -- adding and filter events -->
+	    -- adding  -->
 	  <%= render 'add_event' %>
 
 
 	  <!-- triggered from clicking at planned slots. includes --
-	    -- viewing detail, edit, and filter events -->
+	    -- viewing detail, edit -->
 	  <%= render 'edit_event' %>
+
+          <div class="filtered_events"></div>
+
         </div>
       </div>
     </div>

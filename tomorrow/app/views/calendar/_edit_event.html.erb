@@ -1,26 +1,44 @@
 <!-- event detail, edit link provided -->
 
 <div class="event_detail">
-  <div id="ed_start_datetime">std</div>
-  <div id="ed_end_datetime"></div>
-  <div class="edit"> edit </div>
+  <form class="edit_form">
+    <div class="event_detail_top_box">
+      <div class="basic_info">
+        <div class="show_basic_info">
+          <div id="ed_title"></div>
+          <span id="ed_start_time"></span> -
+          <span id="ed_end_time"></span>
+        </div>
+        <div class="edit_basic_info">
+          <input id="edit_title" name="title"></input> <br/>
+          <input id="edit_start_time" name="start_time"></input> -
+          <input id="edit_end_time" name="end_time"></input>
+        </div>
+      </div>
+      <div class="event_detail_top_line">
+        <span class="event_detail_edit_done">change</span>
+        <span class="event_detail_expand_shrink">expand</span>
+      </div>
+      <div class="clear_event_detail_top_box"></div>
+    </div>
+    <div class="detail_info">
+      <div id="ed_description"></div>
+      <div id="ed_location"></div>
+      <div id="ed_all_day"></div>
+      <div class="repeat_info">
+      </div>
+      <div class="share_info">
+      </div>
+      <div class="privacy_info">
+      </div>
+      <div class="notif_info">
+      </div>
+
+    </div>
+  </form>
 </div>
 
-<div class="filter_event"></div>
+
 
 <!-- edit event -->
 <!-- filter event -->
-
-<script>
-  $(".edit").click(function() {
-    $(".event_detail").hide();
-    $(".edit_event").show();
-  });
-
-  <!-- Does not work right now! -->
-  $(".added_time_slot").click(function() {
-    $(".add_event").hide();
-    $(".event_detail").show();
-  });
-
-</script>

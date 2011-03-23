@@ -1,7 +1,7 @@
 
 <div class="add_event">
 
-  <form action="javascript:add_event_click();">
+  <form>
     <div class="input_general">
       <label>When </label>
       <input type="text" name="add_start_time" value = ""/>
@@ -10,49 +10,49 @@
       <br />
 
       <label>What </label>
-      <input type="text" name="add_what"/>
+      <input type="text" name="what"/>
       <br />
 
       <label>Calendar </label>
-      <input type="text" name="add_calendar"/>
+      <input type="text" name="calendar"/>
       <br />
 
       <label>Add friends </label>
-      <input type="text" name="add_friends" value = ""/>
+      <input type="text" name="friends" value = ""/>
       <br />
 
 
     </div>
     <div class="input_detail">
        <label>Where </label>
-       <input type="text" name="add_where" value = ""/>
+       <input type="text" name="where" value = ""/>
        <br />
        <label>Description </label>
-       <input type="text" name="add_description" value = ""/>
+       <input type="text" name="description" value = ""/>
        <br />
        <label>Privacy </label>
-       <input type="text" name="add_privacy" value = ""/>
+       <input type="text" name="privacy" value = ""/>
        <br />
        <label>All day? </label>
        <input type="text" name="all_day" value = ""/>
        <br />
        <label>repeat? </label>
-       <input type="text" name="add_repeat" value = ""/>
+       <input type="text" name="repeat" value = ""/>
        <br />
        <label>On days </label>
-       <input type="text" name="add_privacy" value = ""/>
+       <input type="text" name="privacy" value = ""/>
        <br />
        <label>On months </label>
-       <input type="text" name="add_privacy" value = ""/>
+       <input type="text" name="privacy" value = ""/>
        <br />
        <label>On years </label>
-       <input type="text" name="add_privacy" value = ""/>
+       <input type="text" name="privacy" value = ""/>
        <br />
        <label>Email Notification </label>
-       <input type="text" name="add_privacy" value = ""/>
+       <input type="text" name="privacy" value = ""/>
        <br />
        <label>Popup Notification </label>
-       <input type="text" name="add_privacy" value = ""/>
+       <input type="text" name="privacy" value = ""/>
        <br />
 
     </div>

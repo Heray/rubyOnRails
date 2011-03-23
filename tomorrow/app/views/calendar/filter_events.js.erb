@@ -1,0 +1,18 @@
+<div class="suggested_events">
+  <h3>Suggested Events</h3>
+
+  <table>
+    <tr>
+     <th>Title</th>
+     <th>Start Time</th>
+     <th>End Time</th>
+    </tr>
+    <% @filtered_events.each do |event| %>
+      <tr>
+       <td><%= event.title %></td>
+       <td><%= event.start_time.strftime('%I:%M%p') %></td>
+       <td><%= event.end_time.strftime('%I:%M%p') %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

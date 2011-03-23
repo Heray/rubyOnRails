@@ -1,8 +1,12 @@
 <!-- event detail, edit link provided -->
 
 <div class="event_detail">
+  <div id="ed_start_datetime">std</div>
+  <div id="ed_end_datetime"></div>
   <div class="edit"> edit </div>
 </div>
+
+<div class="filter_event"></div>
 
 <!-- edit event -->
 <!-- filter event -->

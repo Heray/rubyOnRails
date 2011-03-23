@@ -1,3 +1,0 @@
-<%= javascript_include_tag "jquery", "rails", "application" %>
-
-<div class="filtered_events"></div>

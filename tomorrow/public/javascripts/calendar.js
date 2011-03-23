@@ -8,7 +8,10 @@ $(document).ready(
 
 $(window).scroll(scroll_or_resize);
 $(window).resize(scroll_or_resize);
-var current_date = Date.today().toString('yyyy-M-d')
+var current_date = Date.today();
+function current_date_str() {
+    return current_date.toString('yyyy-M-d');
+}
 
 function perm_resize_update_when() {
 }
@@ -43,7 +46,7 @@ function scroll_or_resize(){
 
     var left = document.body.scrollLeft | window.pageXOffset;
     var calendar_bar_pos = $(".display_box").position().left + 5;
-    var absolute_right_pos = $(".display_box").position().left + 475;
+    var absolute_right_pos = $(".display_box").position().left + 476;
     $(".absolute_right").css("left",absolute_right_pos-left);
     $(".calendar_bar").css("left",calendar_bar_pos-left);
     
@@ -61,21 +64,23 @@ function close_popup_right_half() {
 
 
 var edit = false;
-
+var clicked_perm_event;
 function perm_event_clicked() {
     close_popup_right_half();
     edit = true;
-    //alert($(this).attr("start_time"));
+    clicked_perm_event = $(this);
     st = $(this).attr("start_time");
     et = $(this).attr("end_time");
+    tt = $(this).attr("title");
 
-    $("#ed_start_datetime").text(st);
-    $("#ed_end_datetime").text(et);
+    $("#ed_start_time").text(st);
+    $("#ed_end_time").text(et);
+    $("#ed_title").text(tt);
 
     $(".event_detail").show();
     $(".popup_right_half").show();
 
-    filter_events(st, et, current_date);
+    filter_events(st, et, current_date_str());
 }
 
 /* list events */
@@ -86,18 +91,24 @@ function refresh_event_list() {
 	async: false,
 	data:[{
 	    name: "current_date",
-	    value: current_date
+	    value: current_date_str()
 	}]
     }).responseText;
 
-    $('.for_adding_events_block').append(res);
+    $('.for_adding_events_block').html(res);
     var peb = $('.perm_event_block');
     peb.resizable(resize_var);
     peb.draggable(drag_var);
     peb.click(perm_event_clicked);
 
 }
+
 refresh_event_list();
+
+$("#next_day").click(function() {
+    current_date.addDays(1);
+    refresh_event_list();
+});
 
 String.format = function() {
     var s = arguments[0];
@@ -162,18 +173,22 @@ function temp_add_event_block(id, st, ed) {
     temp_eb_counter ++;
 }
 
-//TODO: data fields is wrong
 function filter_events(st, et, cd) {
     //cd: current date
 
     $(".filtered_events").hide();
-    var fields = st
-    $.ajax( {
+    var fields = {
+	start_time: st,
+	end_time: et,
+	current_date: cd
+    };
+    var res = $.ajax( {
 	type: "POST",
 	url: "filter_events",
-	async: true,
-	data:fields,
-    });
+	async: false,
+	data:fields
+    }).responseText;
+    $(".filtered_events").html(res);
     $(".filtered_events").show();
 
 }
@@ -197,11 +212,70 @@ $(".half_hour_slot").click(function() {
     $('input[name*="add_end_time"]').val(et);
     $(".add_event").show();
 
-    filter_events(st, et, current_date);
+    filter_events(st, et, current_date_str());
     
     $(".popup_right_half").show();
 
 
+});
+
+var event_detail_is_expand = true;
+$(".event_detail_expand_shrink").click(function() {
+    if (event_detail_is_expand) {
+	$(".detail_info").show();
+	event_detail_is_expand = false;
+	$(this).text("shrink");
+    }
+    else {
+	$(".detail_info").hide();
+	$(this).text("expand");
+	event_detail_is_expand = true;
+    }
+});
+
+//TODO: not save for just using event ID. 
+//      should check if it's the right user
+var event_detail_is_edit = true;
+$(".event_detail_edit_done").click(function() {
+    if (event_detail_is_edit) {
+	$(".show_basic_info").hide();
+	$("#edit_title").val(clicked_perm_event.attr("title"));
+	$("#edit_start_time").val(clicked_perm_event.attr("start_time"));
+	$("#edit_end_time").val(clicked_perm_event.attr("end_time"));
+	//more
+
+	$(".edit_basic_info").show();
+	$(this).text("done");
+	event_detail_is_edit = false;
+    }
+    else {
+	//save
+	var fields = $(".edit_form").serializeArray();
+	fields.push({
+	    name: "perm_event_id",
+	    value: clicked_perm_event.attr("perm_event_id")
+	});
+	var res = $.ajax( {
+            type: "POST",
+            url: "edit_event",
+            async: false,
+            data:fields,
+	}).responseText;
+	
+	if (res=="OK") {
+            alert(res);
+	    $(".edit_basic_info").hide();
+	    $(".show_basic_info").show();
+	    $(this).text("change");
+	    event_detail_is_edit = true;
+	}
+    }
+    
+});
+
+$(".added_time_slot").click(function() {
+    $(".add_event").hide();
+    $(".event_detail").show();
 });
 
 
@@ -217,10 +291,10 @@ var event_add_clicked = false;
 function add_event_click() {
     if (event_add_clicked) return;
     event_add_clicked = true;
-    var fields = $("form").serializeArray();
+    var fields = $(".add_form").serializeArray();
     fields.push({
 	name: "current_date",
-	value: current_date
+	value: current_date_str()
     });
     var res = $.ajax( {
         type: "POST",

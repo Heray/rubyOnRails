@@ -29,13 +29,13 @@ class CalendarController < ApplicationController
 
 
   def list_events
-    @current_time = params["current_time"]
+    @current_date = params["current_date"]
     today = "2010-01-01"
     tomorrow = "2020-01-02"
 
 
     # start getting today's events
-    today_events = Event.where("start_time >= ? AND start_time < ?", today, tomorrow)
+    today_events = Event.where("end_date >= ?", @current_date)
 
 
 
@@ -70,8 +70,7 @@ class CalendarController < ApplicationController
     @filtered_events = Event.where("start_time > :et OR end_time < :st",{:et=>endtime, :st=>starttime})
 
     @filtered_events = Event.where("start_time > :et OR end_time <:st",{:et=>"2010-01-01", :st=>"2010-01-01"})
-
-    render_to_string 'calendar/list_events.html.erb'
+    render(:action => 'calendar/list_events.js.erb', :layout => true)
 
   end
 

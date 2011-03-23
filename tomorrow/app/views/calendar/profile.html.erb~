@@ -2,9 +2,9 @@
 <div class="top_bar">
   hey
 </div>
+<div class="top_bar_bottom"></div>
 
 <div class="window">
-
   <div class="display_box">
 
     <div class="left_half">
@@ -12,6 +12,7 @@
         <div class="calendar_bar">
            calendar_bar
         </div>
+        <div class="for_adding_events_block"></div>
 
         <%= render 'list_events' %>
        </div>

@@ -70,18 +70,18 @@ class CalendarController < ApplicationController
     @filtered_events = Event.where("start_time > :et OR end_time < :st",{:et=>endtime, :st=>starttime})
 
     @filtered_events = Event.where("start_time > :et OR end_time <:st",{:et=>"2010-01-01", :st=>"2010-01-01"})
-    render(:action => 'calendar/list_events.js.erb', :layout => true)
+    render_to_string (:template => 'calendar/list_events.js.erb', :layout => false)
 
   end
 
   def filter_events
-    starttime = "2010-01-03"
-    endtime = "2010-01-03"
+    st = params["start_time"]
+    et = params["end_time"]
+    cd = params["current_date"]
 
-    @filtered_events = Event.where("start_time > :et OR end_time < :st",{:et=>endtime, :st=>starttime})
-    @filter_event_str = open("app/views/calendar/_temp.html.erb").read.gsub("\n"," ")
+    @filtered_events = Event.where("end_date >= ?", cd)
 
-    render 'calendar/filtered_events.js.erb'
+    render_to_string 'calendar/filter_events.js.erb'
 
   end
 
@@ -113,6 +113,13 @@ class CalendarController < ApplicationController
     ne = @user.events.create(:title=>tt,:start_time=>st,:end_time=>et,:calendar_id=>@calendar,:start_date=>sd, :end_date=>ed)
     #ne = Event.new(:title=>tt,:start_time=>st,:end_time=>et, :u_id=>@user)
     ne.save
+
+    render :text => "OK"
+  end
+
+  def edit_event
+    puts params
+    #TODO: check if params['perm_event_id'] belongs to @user
 
     render :text => "OK"
   end

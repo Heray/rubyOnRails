@@ -2,6 +2,7 @@ Tomorrow::Application.routes.draw do
 
   match 'calendar/profile' => 'calendar#profile'
   match 'calendar/add_event' => 'calendar#add_event'
+  match 'calendar/edit_event' => 'calendar#edit_event'
   match 'calendar/filter_events' => 'calendar#filter_events'
   match 'calendar/list_events' => 'calendar#list_events'
 
