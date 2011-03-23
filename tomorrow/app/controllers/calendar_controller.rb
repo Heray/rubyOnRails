@@ -70,7 +70,7 @@ class CalendarController < ApplicationController
     @filtered_events = Event.where("start_time > :et OR end_time < :st",{:et=>endtime, :st=>starttime})
 
     @filtered_events = Event.where("start_time > :et OR end_time <:st",{:et=>"2010-01-01", :st=>"2010-01-01"})
-    render_to_string (:template => 'calendar/list_events.js.erb', :layout => false)
+    render_to_string (:template => 'calendar/list_events.html.erb', :layout => false)
 
   end
 
@@ -81,7 +81,7 @@ class CalendarController < ApplicationController
 
     @filtered_events = Event.where("end_date >= ?", cd)
 
-    render_to_string 'calendar/filter_events.js.erb'
+    render_to_string 'calendar/filter_events.html.erb'
 
   end
 

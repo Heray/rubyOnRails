@@ -5,7 +5,7 @@ $(document).ready(
    return false;
 });
 
-
+scroll_or_resize();
 $(window).scroll(scroll_or_resize);
 $(window).resize(scroll_or_resize);
 var current_date = Date.today();
@@ -83,23 +83,35 @@ function perm_event_clicked() {
     filter_events(st, et, current_date_str());
 }
 
+function get_html_body(data) {
+
+    var s = data.indexOf("<body>");
+    var e = data.indexOf("</body>");
+    var res =  data.substring(s+6, e);
+    return res;
+}
+
 /* list events */
 function refresh_event_list() {
-    var res = $.ajax( {
+    $.ajax( {
 	type: "GET",
 	url: "list_events",
-	async: false,
+	async: true,
 	data:[{
 	    name: "current_date",
 	    value: current_date_str()
-	}]
-    }).responseText;
+	}],
+	success: function(data) {
+	    var res = get_html_body(data);
+	    $('.for_adding_events_block').html(res);
 
-    $('.for_adding_events_block').html(res);
-    var peb = $('.perm_event_block');
-    peb.resizable(resize_var);
-    peb.draggable(drag_var);
-    peb.click(perm_event_clicked);
+	    var peb = $('.perm_event_block');
+	    peb.resizable(resize_var);
+	    peb.draggable(drag_var);
+	    peb.click(perm_event_clicked);
+
+	}
+    });
 
 }
 
@@ -188,7 +200,7 @@ function filter_events(st, et, cd) {
 	async: false,
 	data:fields
     }).responseText;
-    $(".filtered_events").html(res);
+    $(".filtered_events").html(get_html_body(res));
     $(".filtered_events").show();
 
 }
